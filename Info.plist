@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Sticky Notes 3D</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIconName</key>
+	<string>AppIcon</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.modernstickynotes.app</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<true/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIImageName</key>
+		<string>launch-screen</string>
+		<key>UIColorName</key>
+		<string>AccentColor</string>
+	</dict>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	
+	<!-- iOS 18 Minimum Deployment Target -->
+	<key>MinimumOSVersion</key>
+	<string>18.0</string>
+	
+	<!-- Privacy and Permissions -->
+	<key>NSCameraUsageDescription</key>
+	<string>Sticky Notes 3D uses the camera to scan documents and capture images for your notes.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Sticky Notes 3D accesses your photo library to attach images to your notes.</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Sticky Notes 3D can create calendar events and reminders from your note content.</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>Sticky Notes 3D can create reminders from your note content to help you stay organized.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>Sticky Notes 3D can access contacts to help with smart actions like calling or emailing people mentioned in your notes.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Sticky Notes 3D can use the microphone for voice-to-text features when creating notes.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Sticky Notes 3D uses speech recognition to convert your voice into text for note creation.</string>
+	
+	<!-- App Transport Security -->
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<false/>
+		<key>NSAllowsArbitraryLoadsInWebContent</key>
+		<false/>
+	</dict>
+	
+	<!-- Background Modes -->
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>background-processing</string>
+		<string>fetch</string>
+	</array>
+	
+	<!-- Document Types -->
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>Sticky Note</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSHandlerRank</key>
+			<string>Owner</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.modernstickynotes.note</string>
+			</array>
+		</dict>
+	</array>
+	
+	<!-- Exported UTI -->
+	<key>UTExportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.data</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Sticky Note</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.modernstickynotes.note</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>stickynote</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
+	
+	<!-- URL Schemes -->
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.modernstickynotes.app</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>stickynotes3d</string>
+			</array>
+		</dict>
+	</array>
+	
+	<!-- iOS 18 Features -->
+	<key>NSSupportsLiveActivities</key>
+	<true/>
+	<key>NSSupportsLiveActivitiesFrequentUpdates</key>
+	<true/>
+	
+	<!-- Widget Support -->
+	<key>NSExtension</key>
+	<dict>
+		<key>NSExtensionPointIdentifier</key>
+		<string>com.apple.widgetkit-extension</string>
+	</dict>
+	
+	<!-- Shortcuts Integration -->
+	<key>NSUserActivityTypes</key>
+	<array>
+		<string>CreateNoteIntent</string>
+		<string>ViewNotesIntent</string>
+		<string>SearchNotesIntent</string>
+	</array>
+	
+	<!-- Focus Filters -->
+	<key>NSFocusFilterIntents</key>
+	<array>
+		<string>ViewNotesIntent</string>
+	</array>
+	
+	<!-- Control Center -->
+	<key>NSControlCenterSupport</key>
+	<true/>
+	
+	<!-- Dynamic Island Support -->
+	<key>NSLiveActivitySupport</key>
+	<true/>
+	
+	<!-- Handoff Support -->
+	<key>NSUserActivityTypes</key>
+	<array>
+		<string>com.modernstickynotes.note-editing</string>
+		<string>com.modernstickynotes.note-viewing</string>
+	</array>
+	
+	<!-- Spotlight Integration -->
+	<key>CSSearchableItemAttributeSet</key>
+	<true/>
+	
+	<!-- Core ML Models -->
+	<key>NSCoreMLUsageDescription</key>
+	<string>Sticky Notes 3D uses machine learning to provide smart categorization and content analysis for your notes.</string>
+	
+	<!-- Accessibility -->
+	<key>UIAccessibilitySupportsZoom</key>
+	<true/>
+	<key>UIAccessibilitySupportsInvertColors</key>
+	<true/>
+	<key>UIAccessibilitySupportsReduceMotion</key>
+	<true/>
+	<key>UIAccessibilitySupportsReduceTransparency</key>
+	<true/>
+	<key>UIAccessibilitySupportsDarkerSystemColors</key>
+	<true/>
+	
+	<!-- Performance -->
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDefault</string>
+	
+	<!-- Metal Support for RealityKit -->
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>metal</string>
+		<string>armv7</string>
+	</array>
+	
+	<!-- 3D Touch / Haptic Touch -->
+	<key>UIForceTouchCapability</key>
+	<true/>
+</dict>
+</plist>
